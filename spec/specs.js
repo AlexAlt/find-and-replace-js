@@ -8,7 +8,7 @@ describe('findAndReplace', function() {
   });
 
   it('handles special cases where words have mis-matched cases', function() {
-    expect(findAndReplace("I lOvE pOOp", "poop", "caRDboard")).to.equal("I lOvE caRDboard");
+    expect(findAndReplace("I lOvE puPPies", "puppies", "caRDboard")).to.equal("I lOvE caRDboard");
   });
 
 });
