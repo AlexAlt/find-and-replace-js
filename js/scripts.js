@@ -1,5 +1,7 @@
 var findAndReplace = function(theString, foundWord, replacementWord) {
 
+//--------what if you want to replace the word regardless of case with the replacement word as-is?-----
+
   var stringWords = theString.split(" ");
   var result = [];
   
@@ -14,6 +16,9 @@ var findAndReplace = function(theString, foundWord, replacementWord) {
   return result.join(" ");
 };
 
+//----------------------------
+
+//--------------what if you want to maintain a certain format for your string?------------
   // var foundPush = [];
   // var foundLetters = foundWord.slice(1).split("");
   // foundLetters.forEach(function(letter) {
@@ -38,10 +43,11 @@ var findAndReplace = function(theString, foundWord, replacementWord) {
   // var upperFoundWord = formattedFoundWord.charAt(0).toUpperCase() + formattedFoundWord.slice(1);
   // var upperReplacementWord = formattedReplaceWord.charAt(0).toUpperCase() + formattedReplaceWord.slice(1);
 
+//-------what if you have multiple words with mismatching cases and only want to replace certain ones?------
 
   // var stringWords = theString.split(" ");
   // var result = [];
-
+  
   // stringWords.forEach(function(word) {
   //   if (word === lowerFoundWord) {
   //     result.push(replacementWord);
@@ -55,7 +61,7 @@ var findAndReplace = function(theString, foundWord, replacementWord) {
   // });
 
   // return result.join(" ");
-
+//---------------------------------
 
   // if (theString.search(lowerFoundWord) >= 0) {
   //   return theString.replace(lowerFoundWord, lowerReplacementWord);
