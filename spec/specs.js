@@ -20,4 +20,12 @@ describe('findAndReplace', function() {
     expect(findAndReplace("I love Seattle", "SeaTTle", "Portland")).to.equal("I love Portland");
   });
 
+  it('handles special cases where words have mis-matched cases', function() {
+    expect(findAndReplace("I love Seattle", "SeaTTle", "PortLAnd")).to.equal("I love Portland");
+  });
+
+   it('handles special cases where words have mis-matched cases', function() {
+    expect(findAndReplace("I love Portland", "I", "you")).to.equal("You love Portland");
+  });
+
 });
