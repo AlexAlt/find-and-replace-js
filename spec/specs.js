@@ -32,4 +32,8 @@ describe('findAndReplace', function() {
     expect(findAndReplace("I lOvE pOOp", "poop", "caRDboard")).to.equal("I lOvE caRDboard");
   });
 
+  //  it('handles special cases where words have mis-matched cases', function() {
+  //   expect(findAndReplace("ugh UGH ugh", "ugh", "gross")).to.equal("gross UGH gross");
+  // });
+
 });

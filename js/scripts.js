@@ -39,6 +39,24 @@ var findAndReplace = function(theString, foundWord, replacementWord) {
   // var upperReplacementWord = formattedReplaceWord.charAt(0).toUpperCase() + formattedReplaceWord.slice(1);
 
 
+  // var stringWords = theString.split(" ");
+  // var result = [];
+
+  // stringWords.forEach(function(word) {
+  //   if (word === lowerFoundWord) {
+  //     result.push(replacementWord);
+  //   } else if (word === upperFoundWord) {
+  //     result.push(replacementWord);
+  //   } else if (word === foundWord) {
+  //     result.push(replacementWord)
+  //   } else {
+  //     result.push(word);
+  //   }
+  // });
+
+  // return result.join(" ");
+
+
   // if (theString.search(lowerFoundWord) >= 0) {
   //   return theString.replace(lowerFoundWord, lowerReplacementWord);
   // } else if (theString.search(upperFoundWord) >= 0) {
